@@ -23,7 +23,7 @@ self_supervised/
 
 > **Shared dependencies** (in `src/`):
 > - `models/backbones.py` — CNN-LSTM backbone
-> - `data_preprocess/data_preprocess_dataset.py` — single-device data loader
+> - `data_preprocess/data_preprocess_ppg.py` — single-device data loader
 > - `data_prep.py` — dataset dispatcher
 
 ---
