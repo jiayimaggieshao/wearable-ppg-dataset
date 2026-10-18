@@ -1,3 +1,8 @@
+# Source: WildPPG
+# https://github.com/eth-siplab/WildPPG
+# Original code licensed under GNU GPL-3.0.
+# See the repository LICENSE file for license details.
+
 import numpy as np
 from numpy.lib.stride_tricks import as_strided as ast
 # from dataclasses import dataclass
