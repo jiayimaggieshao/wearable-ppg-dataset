@@ -34,7 +34,7 @@ from huggingface_hub import snapshot_download
 snapshot_download(
     repo_id="snowballlab/Multisite-PPG",
     repo_type="dataset",
-    local_dir="Multisite-PPG",
+    local_dir="../Multisite-PPG",
     allow_patterns="sample_data/*"
 )
 '
@@ -47,7 +47,7 @@ from huggingface_hub import snapshot_download
 snapshot_download(
     repo_id='snowballlab/Multisite-PPG',
     repo_type='dataset',
-    local_dir='Multisite-PPG'
+    local_dir='../Multisite-PPG'
 )
 "
 ```
@@ -57,6 +57,7 @@ After downloading your dataset, put **`wearable-ppg-dataset`** (the repo from Gi
 
 ## Running Experiments
 
+For each experiment section below, start from the `wearable-ppg-dataset/` repository root before running its `cd` command.
 
 > **Where to find your results.** Each step writes its outputs into a folder inside its own directory, organized per participant (e.g. `P7/`, `P8/`):
 > - §1 Heuristic baselines → `src/heuristic_baselines/outputs/`
@@ -68,7 +69,7 @@ After downloading your dataset, put **`wearable-ppg-dataset`** (the repo from Gi
 All commands below are run from `wearable-ppg-dataset/src/heuristic_baselines/`:
 
 ```bash
-cd wearable-ppg-dataset/src/heuristic_baselines/
+cd src/heuristic_baselines/
 ```
 
 #### 1.1 Dataset download
@@ -102,7 +103,7 @@ For the default sample-data setup, a full heuristic run typically takes about **
 
 All commands below are run from `wearable-ppg-dataset/src/model_baselines/` with `PYTHONPATH=.`:
 ```bash
-cd wearable-ppg-dataset/src/model_baselines/
+cd src/model_baselines/
 ```
 
 #### Set up environment
@@ -199,7 +200,7 @@ Expected runtime: ~15 minutes on a single NVIDIA H100 for sample data.
 Use this only if you want to **re-window raw recordings** (e.g. change window length or stride). All commands below are run from `wearable-ppg-dataset/src/prepare_windowed_dataset/`:
 
 ```bash
-cd wearable-ppg-dataset/src/prepare_windowed_dataset/
+cd src/prepare_windowed_dataset/
 ```
 
 #### 3.1 Dataset download
@@ -237,6 +238,5 @@ python run_pipeline.py
 **Code:** Released under [GNU General Public License v3.0](./LICENSE) (GPL-3.0). Portions are derived from [WildPPG](https://github.com/eth-siplab/WildPPG), also licensed under GPL-3.0.
 
 **Dataset:** Released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
-
 
 
