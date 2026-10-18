@@ -1,3 +1,9 @@
+# Adapted from the WildPPG project:
+# https://github.com/eth-siplab/WildPPG
+# Original code licensed under GNU GPL-3.0.
+# Modified for the Multi-site PPG project.
+# See the repository LICENSE file for license details.
+
 from torch.utils.data import Dataset
 
 class base_loader(Dataset):
