@@ -1,3 +1,11 @@
+
+# Adapted from the WildPPG project:
+# https://github.com/eth-siplab/WildPPG
+#
+# Original code licensed under GNU GPL-3.0.
+# Modified for the Multi-site PPG dataset and benchmark evaluation.
+# See the repository LICENSE file for license details.
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
