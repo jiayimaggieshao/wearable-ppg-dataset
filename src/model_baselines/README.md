@@ -95,13 +95,12 @@ Pass `--data_dir <path>` to override. `quickstart.py` defaults to the sample pat
 src/model_baselines/
 ├── quickstart.py                         # Smoke-test runner for reviewers
 ├── environment.yaml                      # Conda environment
-├── requirements.txt                      # Pip dependencies
 │
 ├── data_preprocess/
 │   ├── data_prep.py                      # Dataset loader dispatcher
 │   ├── base_loader.py                    # Base PyTorch Dataset class
 │   ├── participants_config.py            # Participant & device file discovery
-│   ├── data_preprocess_dataset.py        # Single-device (per-position) loader
+│   ├── data_preprocess_ppg.py        # Single-device (per-position) loader
 │   ├── data_preprocess_multisite.py      # 4-device green-channel loader
 │   ├── data_preprocess_multisite_accel.py  # 4-device green+accel loader
 │   ├── data_preprocess_multisite_ir.py     # 4-device green+IR loader
